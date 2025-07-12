@@ -10,9 +10,10 @@ document.getElementById("submit-button").onclick = function(){
 let age;
 
 document.getElementById("enter-button").onclick= function(){
-    age = document.getElementById("myage").value;
-    age = 1 + (Number(document.getElementById("myage").value));
-    document.getElementById("myage").value = "";
-    console.log(age);
-    document.querySelector("#age-result").innerHTML = `You age is ${age}`;
-  }
+  age = document.getElementById("myage").value;
+  age = 1 + (Number(document.getElementById("myage").value));
+  document.getElementById("myage").value = "";
+  console.log(age);
+  document.querySelector("#age-result").innerHTML = `<p style="color: red;">You age is ${age}</p>`;
+}
+
